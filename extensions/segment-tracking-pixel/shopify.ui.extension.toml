@@ -1,0 +1,19 @@
+type = "web_pixel_extension"
+name = "segment-tracking-pixel"
+
+runtime_context = "strict"
+
+[capabilities]
+network_access = true
+api_access = true
+
+[settings]
+type = "object"
+
+[settings.fields.accountID]
+name = "Account ID"
+description = "Account ID"
+type = "single_line_text_field"
+validations =  [
+  { name = "min", value = "1" }
+]
